@@ -1,0 +1,17 @@
+.project_short
+
+  %h2.title= project.title
+  = project.summary
+
+  %dl
+    %dt= t(".location")
+    %dd.location= project.location
+
+    %dt= t(".duration")
+    %dd.duration= project.duration
+
+    %dt= t(".attachments")
+    %dd.attachments
+      %ol
+        = list_of project.attachments do |attachment|
+          = link_to attachment.name, attachment.file.url

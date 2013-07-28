@@ -1,0 +1,11 @@
+%article.project_long
+
+  %h1.title= project.title
+
+  %p.location= project.location.prepend_icon("location")
+
+  = markdown project.description
+
+  %ol.attachments
+    = list_of project.attacments do |attachment|
+      = link_to attachment.name, attachment.file.url

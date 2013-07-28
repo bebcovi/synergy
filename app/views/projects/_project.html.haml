@@ -1,0 +1,9 @@
+%article
+
+  %header
+    %h1= smarty_pants project.title
+    %p.location= project.location.prepend_icon("location")
+
+  = project.summary
+
+  %p= link_to "#{t("words.more")} →", project

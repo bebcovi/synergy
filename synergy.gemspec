@@ -2,16 +2,61 @@ Gem::Specification.new do |gem|
   gem.name         = "synergy"
   gem.version      = "1"
 
+  gem.required_ruby_version = ">= 2"
+
   gem.authors      = ["Janko Marohnić"]
   gem.email        = ["janko.marohnic@gmail.com"]
-  gem.description  = "A common engine for 2 similar websites."
+  gem.description  = "A common engine for 2 very similar websites."
   gem.summary      = gem.description
   gem.homepage     = "https://github.com/twin/synergy"
 
   gem.license      = "MIT"
 
-  gem.files        = Dir["**/*"] - ["Rakefile", "synergy.gemspec", "Gemfile", "Gemfile.lock"]
+  gem.files        = Dir["**/*"] - ["synergy.gemspec", "Gemfile", "Gemfile.lock"]
   gem.require_path = "lib"
 
-  gem.add_development_dependency "rake"
+
+  gem.add_dependency "rails", ">= 4"
+
+  # Views
+  gem.add_dependency "haml", ">= 4"
+  gem.add_dependency "haml-rails"
+  gem.add_dependency "simple_form", ">= 3.0.0.rc"
+  gem.add_dependency "redcarpet", ">= 3"
+  gem.add_dependency "will_paginate"
+  gem.add_dependency "draper"
+  gem.add_dependency "letter_opener" # Development
+
+  # Assets
+  gem.add_dependency "sass-rails"
+  gem.add_dependency "bourbon"
+  gem.add_dependency "jquery-rails"
+  gem.add_dependency "coffee-rails"
+  gem.add_dependency "uglifier"
+  gem.add_dependency "quiet_assets" # Development
+
+  # Database
+  gem.add_dependency "pg"
+  gem.add_dependency "carrierwave", ">= 0.9"
+  gem.add_dependency "rmagick"
+  gem.add_dependency "fog", ">= 1.14"
+  gem.add_dependency "squeel", ">= 1.1"
+  gem.add_dependency "active_attr"
+
+  # I18n
+  gem.add_dependency "rails-i18n"
+  gem.add_dependency "i18n-country-translations"
+  gem.add_dependency "i18n_country_select"
+
+  # Servers
+  gem.add_dependency "thin"    # For development
+  gem.add_dependency "unicorn" # For production
+
+  # Other
+  gem.add_dependency "dotenv"
+  gem.add_dependency "exception_notification", ">= 4" # Production
+  gem.add_dependency "pry-rails" # Development
+  gem.add_dependency "better_errors" # Development
+  gem.add_dependency "binding_of_caller" # Development
+  gem.add_dependency "rails_12factor" # For Heroku
 end
