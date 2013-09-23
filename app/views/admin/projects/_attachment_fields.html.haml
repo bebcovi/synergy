@@ -1,0 +1,18 @@
+.fields
+  %ol
+    %li.input
+      %label &nbsp;
+      = f.input_field :name_en
+      = f.input_field :file_en, as: :file
+      = f.hidden_field :file_en_cache
+      = link_to f.object.file_en.extension.upcase, f.object.file_en_url if f.object.file_en?
+    %li.delete
+      %label &nbsp;
+      = f.hidden_field :_destroy
+      = link_to_remove_fields "Remove"
+    %li.input
+      %label &nbsp;
+      = f.input_field :name_hr
+      = f.input_field :file_hr, as: :file
+      = f.hidden_field :file_hr_cache
+      = link_to f.object.file_hr.extension.upcase, f.object.file_hr_url if f.object.file_hr?

@@ -1,4 +1,4 @@
-Synergy::Engine.routes.draw do
+Synergy.app.routes.draw do
   scope "(:locale)", locale: /en|hr/ do
     resources :projects, only: :show
 
@@ -7,4 +7,7 @@ Synergy::Engine.routes.draw do
         via: [:get, :post, :put, :patch, :delete]
     end
   end
+
+  devise_for :users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 end

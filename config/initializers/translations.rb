@@ -3,26 +3,23 @@ require "squeel"
 
 class Draper::Decorator
   def self.translates(*attributes)
-    mod = Module.new
-    mod.module_eval do
+    include Module.new {
       attributes.each do |attribute|
-        define_method(attribute) do |*args|
-          object.send("#{attribute}_#{I18n.locale}", *args)
-        end
+        class_eval <<-RUBY, __FILE__, __LINE__+1
+          def #{attribute}(*args)
+            object.send("#{attribute}_\#{I18n.locale}", *args)
+          end
+        RUBY
       end
-
-      def to_s
-        "TranslationAttributes"
-      end
-    end
-    include mod
+    }
   end
 end
 
 module ActiveRecord
   class Base
-    def self.required_locale_columns(*columns)
-      @_required_locale_columns = columns
+    def self.required_locale_columns(*args)
+      options = args.last.is_a?(Hash) ? args.pop : {}
+      @_required_locale_columns = args
 
       scope :available_in, ->(locale) do
         columns = _required_locale_columns(locale)
@@ -43,9 +40,9 @@ module ActiveRecord
         end
       RUBY
 
-      unless columns.count <= 1
-        validates_presence_chain *(columns.map { |column| "#{column}_en" })
-        validates_presence_chain *(columns.map { |column| "#{column}_hr" })
+      if @_required_locale_columns.count > 1 and options[:validations] != false
+        validates_presence_chain *(@_required_locale_columns.map { |column| "#{column}_en" })
+        validates_presence_chain *(@_required_locale_columns.map { |column| "#{column}_hr" })
       end
     end
 

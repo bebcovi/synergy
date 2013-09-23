@@ -3,11 +3,19 @@ class Project < ActiveRecord::Base
   has_many :testimonials, dependent: :destroy
   has_many :attachments, dependent: :destroy
 
-  required_locale_columns :name, :description, :location
+  required_locale_columns :description, :summary, validations: false
+  accepts_nested_attributes_for :attachments, allow_destroy: true
 
   default_scope      -> { order{created_at.desc} }
   scope :upcoming,   -> { where{begins_on > Date.today} }
   scope :forecoming, -> { where{ends_on < Date.today} }
 
-  validates_presence_of :begins_on, :ends_on, :deadline
+  validates_presence_of :name_en, :name_hr, :location_en, :location_hr,
+    :begins_on, :ends_on, :deadline
+  validates_presence_of :summary_en, if: :description_en?
+  validates_presence_of :summary_hr, if: :description_hr?
+
+  def to_s
+    [name_en, name_hr].find(&:present?)
+  end
 end

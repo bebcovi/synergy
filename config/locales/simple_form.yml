@@ -1,0 +1,56 @@
+hr:
+  simple_form:
+    labels:
+      defaults:
+        username: "Username"
+        password: "Password"
+
+en:
+  simple_form:
+    labels:
+      project:
+        name_en: "Name"
+        name_hr: "Name"
+        description_en: "Description"
+        description_hr: "Description"
+        location_en: "Location"
+        location_hr: "Location"
+        age_restriction_en: "Age restriction"
+        age_restriction_hr: "Age restriction"
+        capacity_en: "Capacity"
+        capacity_hr: "Capacity"
+        deadline: "Deadline for application submission"
+        summary_en: "Summary"
+        summary_hr: "Summary"
+      partner:
+        name_hr: "Name"
+        name_en: "Name"
+        url_hr: "Url"
+        url_en: "Url"
+      post:
+        title_en: "Title"
+        title_hr: "Title"
+        body_en: "Body"
+        body_hr: "Body"
+      text:
+        body_en: "Body"
+        body_hr: "Body"
+      announcement:
+        content_en: "Content"
+        content_hr: "Content"
+    placeholders:
+      project:
+        location_en: "Eg. \"Sydney, Australia\""
+        location_hr: "Eg. \"Sydney, Australija\""
+      attachments:
+        name_en: "Name en"
+        name_hr: "Name hr"
+    hints:
+      project:
+        category: "You can manage categories <a href=\"/admin/categories\">here</a>."
+        name_en: "Only the name; the category and the date of the project will be appended to the title automatically."
+        name_hr: "Only the name; the category and the date of the project will be appended to the title automatically."
+      announcement:
+        content_en: "Maximum length is 255 characters."
+        content_hr: "Maximum length is 255 characters."
+        expires_on: "When the announcement will expire, i.e. won't be displayed on the website anymore."

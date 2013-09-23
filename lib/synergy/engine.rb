@@ -10,6 +10,7 @@ require "will_paginate/railtie"
 require "will_paginate/array"
 require "draper"
 require "letter_opener"
+require "activeadmin"
 
 # Assets
 require "sass-rails"
@@ -19,6 +20,8 @@ require "jquery-rails"
 require "coffee-rails"
 require "uglifier"
 require "quiet_assets" if Rails.env.development?
+require "jquery-turbolinks"
+require "turbolinks"
 
 # Database
 require "carrierwave"
@@ -34,6 +37,10 @@ module Synergy
       g.fixture_replacement nil
       g.assets false
       g.helper false
+    end
+
+    initializer :synergy do
+      ActiveAdmin.application.load_paths.unshift File.join(File.dirname(__FILE__), "admin")
     end
   end
 end

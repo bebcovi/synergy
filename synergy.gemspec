@@ -26,6 +26,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "will_paginate"
   gem.add_dependency "draper"
   gem.add_dependency "letter_opener" # Development
+  gem.add_dependency "nokogiri"
 
   # Assets
   gem.add_dependency "sass-rails"
@@ -33,6 +34,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency "jquery-rails"
   gem.add_dependency "coffee-rails"
   gem.add_dependency "uglifier"
+  gem.add_dependency "turbolinks"
+  gem.add_dependency "jquery-turbolinks"
   gem.add_dependency "quiet_assets" # Development
 
   # Database
@@ -42,9 +45,9 @@ Gem::Specification.new do |gem|
   gem.add_dependency "fog", ">= 1.14"
   gem.add_dependency "squeel", ">= 1.1"
   gem.add_dependency "active_attr"
+  gem.add_dependency "acts_as_list", ">= 0.2"
 
   # I18n
-  gem.add_dependency "rails-i18n"
   gem.add_dependency "i18n-country-translations"
   gem.add_dependency "i18n_country_select"
 

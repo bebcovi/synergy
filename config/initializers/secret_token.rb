@@ -1,1 +1,1 @@
-Synergy.app.config.secret_token = ENV["SECRET_TOKEN"]
+Synergy.app.config.secret_key_base = ENV["SECRET_TOKEN"]

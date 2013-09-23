@@ -15,7 +15,6 @@ class CreateProjects < ActiveRecord::Migration
       t.string :age_restriction_hr
       t.string :capacity_en
       t.string :capacity_hr
-      t.string
 
       t.timestamps
     end
