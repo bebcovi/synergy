@@ -6,7 +6,7 @@ class ProjectDecorator < Draper::Decorator
   delegate :to_s
 
   def title
-    h.smarty_pants [name, category.try(:name), h.date_range(begins_on, ends_on)].select(&:present?).join(", ")
+    h.smarty_pants [name, h.date_range(begins_on, ends_on)].join(", ")
   end
 
   def description

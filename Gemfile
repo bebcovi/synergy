@@ -6,5 +6,5 @@ gemspec
 gem "sassy-buttons-bourbon", github: "silvenon/Sassy-Buttons-bourbon"
 
 # ActiveAdmin
-gem "activeadmin",         github: "gregbell/active_admin",        branch: "rails4"
+gem "activeadmin",         github: "gregbell/active_admin"
 gem "inherited_resources", github: "josevalim/inherited_resources"

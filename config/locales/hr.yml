@@ -13,6 +13,7 @@ hr:
     more: "Opširnije"
     and: "i"
     or: "ili"
+    back: "Natrag"
 
   will_paginate:
     previous_label: "⇽ Prethodna"

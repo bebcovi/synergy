@@ -44,4 +44,8 @@ module SynergyHelper
     end
     {id: id, fields: fields.delete("\n")}
   end
+
+  def back_button(string, path, options = {})
+    link_to string.prepend_icon("chevron-left"), path, options
+  end
 end

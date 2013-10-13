@@ -2,20 +2,21 @@
 
   %fieldset.inputs
     %ol
-      = f.association :project
       = f.input :author
 
   %h2 English
 
-  %fieldset.input
+  %fieldset.inputs
     %ol
-      = f.input :content_en
+      = f.input :content_en, input_html: {rows: 15}
+      = f.input :project_en
 
   %h2 Croatian
 
-  %fieldset.input
+  %fieldset.inputs
     %ol
-      = f.input :content_hr
+      = f.input :content_hr, input_html: {rows: 15}
+      = f.input :project_hr
 
   %fieldset.actions
     %ol

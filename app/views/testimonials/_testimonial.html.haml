@@ -5,5 +5,4 @@
 
     %footer
       %b.author= testimonial.author
-      ,
-      = testimonial.project.name
+      = ", #{testimonial.project}" if testimonial.project.present?

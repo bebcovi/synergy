@@ -31,7 +31,7 @@ Synergy.active_admin.project = proc do
       row :deadline
     end
 
-    locale_attributes :name, :description, :summary, :location,
+    locale_attributes :title, :description, :summary, :location,
       :age_restriction, :capacity
   end
 end

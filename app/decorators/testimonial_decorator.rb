@@ -1,7 +1,10 @@
 class TestimonialDecorator < Draper::Decorator
   delegate_all
-  translates :content
-  decorates_association :project
+  translates :content, :project
 
   delegate :to_s
+
+  def content
+    h.markdown super
+  end
 end

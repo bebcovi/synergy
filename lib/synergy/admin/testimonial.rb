@@ -15,7 +15,6 @@ Synergy.active_admin.testimonial = proc do
 
   show title: ->(testimonial) { testimonial.to_s } do |testimonial|
     attributes_table do
-      row :project
       row :author
     end
 
@@ -25,6 +24,7 @@ Synergy.active_admin.testimonial = proc do
       attributes_table do
         I18n.with_locale(locale) do
           row :content
+          row :project
         end
       end
     end

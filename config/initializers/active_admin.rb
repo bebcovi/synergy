@@ -15,7 +15,6 @@ ActiveAdmin.setup do |config|
   # Default:
   config.root_to = 'posts#index'
 
-
   # == User Authentication
   #
   # Active Admin will automatically call an authentication

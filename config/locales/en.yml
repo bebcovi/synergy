@@ -13,6 +13,7 @@ en:
     more: "More"
     and: "and"
     or: "or"
+    back: "Back"
 
   will_paginate:
     previous_label: "⇽ Previous"
