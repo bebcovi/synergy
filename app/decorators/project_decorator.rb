@@ -18,7 +18,7 @@ class ProjectDecorator < Draper::Decorator
   end
 
   def duration
-    (ends_on - begins_on).to_i + 1
+    h.days (ends_on - begins_on).to_i + 1
   end
 
   def date

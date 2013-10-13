@@ -48,4 +48,18 @@ module SynergyHelper
   def back_button(string, path, options = {})
     link_to string.prepend_icon("chevron-left"), path, options
   end
+
+  def days(number)
+    if croatian?
+      case number
+      when 1 then "#{number} dan"
+      else        "#{number} dana"
+      end
+    else
+      case number
+      when 1 then "#{number} day"
+      else        "#{number} days"
+      end
+    end
+  end
 end
