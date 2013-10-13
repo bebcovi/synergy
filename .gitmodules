@@ -1,3 +1,4 @@
-[submodule "vendor/assets/stylesheets/inuit.css"]
-	path = vendor/assets/stylesheets/inuit.css
-	url = git://github.com/silvenon/inuit.css.git
+[submodule "vendor/assets/stylesheets/base-style"]
+	path = vendor/assets/stylesheets/base-style
+	url = git://github.com/silvenon/base-style.git
+	branch = a1deb8872f25efd4a00b71440404f613c1dbc950
