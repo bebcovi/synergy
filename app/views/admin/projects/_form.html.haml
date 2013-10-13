@@ -2,6 +2,12 @@
 
   %fieldset.inputs
     %ol
+      = f.input :cover_photo do
+        .list-inline-block
+          = image_tag @project.cover_photo_url(:small), height: 100 if @project.cover_photo?
+          = f.input_field :cover_photo
+          = f.hidden_field :cover_photo_cache
+          = f.input :remove_cover_photo, wrapper: false, as: :boolean if @project.cover_photo?
       = f.association :category
       = f.input :begins_on
       = f.input :ends_on

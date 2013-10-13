@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
+  mount_uploader :cover_photo, PhotoUploader
   required_locale_columns :title, :body
 
   def to_s

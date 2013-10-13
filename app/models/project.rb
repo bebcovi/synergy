@@ -3,6 +3,7 @@ class Project < ActiveRecord::Base
   has_many :testimonials, dependent: :destroy
   has_many :attachments, dependent: :destroy
 
+  mount_uploader :cover_photo, PhotoUploader
   required_locale_columns :description, :summary, validations: false
   accepts_nested_attributes_for :attachments, allow_destroy: true
 

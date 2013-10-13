@@ -16,6 +16,10 @@ Synergy.active_admin.post = proc do
   form partial: "form"
 
   show title: ->(post) { post.to_s } do |post|
+    row :cover_photo do
+      image_tag post.cover_photo_url(:small), height: 100 if post.cover_photo?
+    end
+
     %i[en hr].each do |locale|
       h1 { {en: "English", hr: "Croatian"}[locale] }
 

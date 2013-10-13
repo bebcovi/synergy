@@ -22,6 +22,7 @@ en:
         deadline: "Deadline for application submission"
         summary_en: "Summary"
         summary_hr: "Summary"
+        remove_cover_photo: "Remove?"
       partner:
         name_hr: "Name"
         name_en: "Name"
