@@ -63,7 +63,7 @@ PATH
       redcarpet (>= 3)
       rmagick
       sass-rails
-      simple_form (>= 3.0.0.rc)
+      simple_form (>= 3.0.0)
       squeel (>= 1.1)
       thin
       turbolinks
