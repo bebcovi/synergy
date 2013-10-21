@@ -1,7 +1,11 @@
-#= require_directory .
-#= stub ./active_admin
-#
 #= require_self
+#
+#= require_tree .
 
-@controller = (name) -> $("body").hasClass(name)
-@action     = (name) -> $("body").hasClass(name)
+jQuery ($) ->
+
+  page = $("body").attr("class").split(" ")
+
+  window.App =
+    controller: page[0]
+    action:     page[1]
