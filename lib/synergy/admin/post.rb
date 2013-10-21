@@ -16,8 +16,10 @@ Synergy.active_admin.post = proc do
   form partial: "form"
 
   show title: ->(post) { post.to_s } do |post|
-    row :cover_photo do
-      image_tag post.cover_photo_url(:small), height: 100 if post.cover_photo?
+    attributes_table do
+      row :cover_photo do
+        image_tag post.cover_photo_url(:small), height: 100 if post.cover_photo?
+      end
     end
 
     %i[en hr].each do |locale|
