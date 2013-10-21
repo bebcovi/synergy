@@ -39,4 +39,23 @@ body.active_admin {
       font-size: 1.3em;
     }
   }
+
+  .post_cover_photo,
+  .project_cover_photo {
+    .unsemantic {
+      > * {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      img {
+        margin-right: 20px;
+      }
+    }
+
+    input[type="checkbox"] {
+      margin-right: 4px;
+    }
+  }
 }

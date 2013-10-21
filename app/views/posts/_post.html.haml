@@ -3,4 +3,8 @@
   %header
     %h1= smarty_pants post.title
 
+  - if post.cover_photo?
+    .article-cover-photo
+      = image_tag post.cover_photo_url(:medium)
+
   = markdown post.body
