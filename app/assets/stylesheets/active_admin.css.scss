@@ -58,4 +58,30 @@ body.active_admin {
       margin-right: 4px;
     }
   }
+
+  .attachments {
+    .unsemantic {
+      @include position(relative);
+      padding: 10px;
+      background-color: rgba(black, .025);
+      border: 1px solid rgba(black, .1);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .fields-remove-attachment {
+      @include position(absolute, 40px 20px 0 0);
+
+      a {
+        color: rgba(black, .25);
+        text-decoration: none;
+        font-size: 24px;
+
+        &:hover,
+        &:focus {
+          color: rgba(black, .5);
+        }
+      }
+    }
+  }
 }
