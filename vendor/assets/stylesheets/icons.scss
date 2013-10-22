@@ -1,89 +1,100 @@
-@include font-face(icons, "icons/icons", normal, $asset-pipeline: true);
+@include font-face(icomoon, "icomoon/icomoon", normal, $asset-pipeline: true);
 
 [class*="icon-"] {
-  font-family: icons;
+  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
   line-height: 1;
+
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-images:before {
+  content: "\e02e";
+}
 .icon-bubble-plus:before {
-  content: "\e016";
+  content: "\e177";
 }
 .icon-eye-blocked:before {
-  content: "\e019";
+  content: "\e2da";
 }
 .icon-eye:before {
-  content: "\e018";
+  content: "\e2d9";
 }
 .icon-menu:before {
-  content: "\e00b";
+  content: "\e2ac";
+}
+.icon-menu2:before {
+  content: "\e2b0";
+}
+.icon-menu3:before {
+  content: "\e2b1";
 }
 .icon-remove:before {
-  content: "\e017";
+  content: "\e250";
 }
 .icon-image:before {
-  content: "\e015";
+  content: "\e02c";
 }
 .icon-pencil:before {
-  content: "\e00a";
-}
-.icon-file-word:before {
-  content: "\e012";
-}
-.icon-file-pdf:before {
   content: "\e011";
 }
-.icon-chevron-left:before {
-  content: "\e010";
+.icon-file-word:before {
+  content: "\e4e4";
 }
-.icon-chevron-down:before {
-  content: "\e00f";
-}
-.icon-chevron-right:before {
-  content: "\e00e";
+.icon-file-pdf:before {
+  content: "\e4e2";
 }
 .icon-chevron-up:before {
-  content: "\e00d";
+  content: "\e3b0";
+}
+.icon-chevron-right:before {
+  content: "\e3b1";
+}
+.icon-chevron-down:before {
+  content: "\e3b2";
+}
+.icon-chevron-left:before {
+  content: "\e3b3";
 }
 .icon-plus:before {
-  content: "\e009";
+  content: "\e376";
 }
 .icon-location:before {
-  content: "\e008";
+  content: "\e0f1";
 }
 .icon-calendar:before {
-  content: "\e007";
+  content: "\e116";
 }
 .icon-feed:before {
-  content: "\e006";
+  content: "\e4a0";
 }
 .icon-twitter:before {
-  content: "\e005";
+  content: "\e49d";
 }
 .icon-facebook:before {
-  content: "\e004";
+  content: "\e498";
 }
 .icon-share:before {
-  content: "\e003";
+  content: "\e48c";
 }
-.icon-mail:before {
-  content: "\e002";
+.icon-envelop:before {
+  content: "\e0ec";
 }
 .icon-phone:before {
-  content: "\e001";
+  content: "\e0db";
 }
 .icon-heart:before {
-  content: "\e000";
+  content: "\e30a";
 }
 .icon-exit:before {
-  content: "\e014";
+  content: "\e37e";
 }
-.icon-menu-up:before {
-  content: "\e00c";
-}
-.icon-menu-down:before {
-  content: "\e013";
+.icon-spinner:before {
+  content: "\e1a9";
 }
