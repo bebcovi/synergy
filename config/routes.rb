@@ -1,4 +1,6 @@
 Synergy.app.routes.draw do
+  get "login", to: redirect("/admin")
+
   scope "(:locale)", locale: /en|hr/ do
     resources :projects, only: :show
 
