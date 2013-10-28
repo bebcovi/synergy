@@ -22,15 +22,6 @@ Synergy.active_admin.post = proc do
       end
     end
 
-    %i[en hr].each do |locale|
-      h1 { {en: "English", hr: "Croatian"}[locale] }
-
-      attributes_table do
-        I18n.with_locale(locale) do
-          row :title
-          row :body
-        end
-      end
-    end
+    locale_attributes :title, :body, :summary
   end
 end

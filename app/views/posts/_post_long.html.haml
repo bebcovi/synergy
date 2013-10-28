@@ -1,10 +1,9 @@
 %article
 
-  %header
-    %h1= post.title
+  %h1.title= post.title
 
   - if post.cover_photo?
     .article-cover-photo
       = image_tag post.cover_photo_url(:medium)
 
-  = post.summary
+  = post.body

@@ -3,6 +3,7 @@ Synergy.app.routes.draw do
 
   scope "(:locale)", locale: /en|hr/ do
     resources :projects, only: :show
+    resources :posts, only: :show
 
     controller :errors do
       match ":code", to: :show, constraints: {code: /\d+/},
