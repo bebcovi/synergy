@@ -14,7 +14,7 @@ class ProjectDecorator < Draper::Decorator
   end
 
   def summary
-    h.markdown (super.rstrip + "... #{h.link_to("#{I18n.t("words.more")} →", object)}")
+    h.markdown (super.rstrip + " #{h.link_to("#{I18n.t("words.more")} →", object, class: "read-more")}")
   end
 
   def duration
