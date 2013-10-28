@@ -10,6 +10,6 @@
 
   = markdown project.description
 
-  %ol.attachments
+  %ul.attachments
     = list_of project.attachments do |attachment|
       = link_to attachment.name, attachment.file.url
