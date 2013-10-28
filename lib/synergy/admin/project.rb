@@ -1,5 +1,5 @@
 Synergy.active_admin.project = proc do
-  config.sort_order = "begins_on_desc"
+  config.sort_order = "created_at_desc"
   config.per_page   = 10
 
   decorate_with ProjectDecorator
@@ -15,9 +15,7 @@ Synergy.active_admin.project = proc do
     column :name do |project|
       smarty_pants project.name_en
     end
-    column :location do |project|
-      project.location_en
-    end
+    column :category
     column :date
     default_actions
   end

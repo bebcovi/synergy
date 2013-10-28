@@ -50,8 +50,8 @@ en:
     hints:
       project:
         category: "You can manage categories <a href=\"/admin/categories\">here</a>."
-        name_en: "The date will be included automatically in the title."
-        name_hr: "The date will be included automatically in the title."
+        name_en: "The category and the date will be included automatically in the title."
+        name_hr: "The category and the date will be included automatically in the title."
       announcement:
         content_en: "Maximum length is 255 characters."
         content_hr: "Maximum length is 255 characters."
