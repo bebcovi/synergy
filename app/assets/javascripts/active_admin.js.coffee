@@ -12,6 +12,9 @@
 
 jQuery ->
 
+  if $("#page_title").text() == "Markdown"
+    $("#utility_nav #markdown").addClass("current")
+
   $('form').on 'click', '.add_fields', (event) ->
     time = new Date().getTime()
     regexp = new RegExp($(this).data('id'), 'g')

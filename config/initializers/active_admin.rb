@@ -86,6 +86,10 @@ ActiveAdmin.setup do |config|
   #   end
   config.namespace :admin do |admin|
     admin.download_links = false
+    admin.build_menu :utility_navigation do |menu|
+      menu.add label: "Markdown", url: "/admin/markdown"
+      admin.add_logout_button_to_menu menu
+    end
   end
 end
 
