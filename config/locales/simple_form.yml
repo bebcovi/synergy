@@ -36,6 +36,7 @@ en:
       text:
         body_en: "Body"
         body_hr: "Body"
+        toc: "Generate table of contents?"
       announcement:
         content_en: "Content"
         content_hr: "Content"

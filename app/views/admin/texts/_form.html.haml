@@ -1,5 +1,9 @@
 = simple_form_for [:admin, @text], defaults: {wrapper_tag: :li} do |f|
 
+  %fieldset.inputs
+    %ol
+      = f.input :toc, as: :radio_buttons
+
   %h2 English
 
   %fieldset.inputs

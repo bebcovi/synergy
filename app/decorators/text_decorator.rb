@@ -2,9 +2,9 @@ class TextDecorator < Draper::Decorator
   delegate_all
   translates :body
 
-  def body(options = {})
-    html = h.markdown super()
-    html = "#{h.toc_for(html)}#{html}".html_safe if options[:toc]
+  def body
+    html = h.markdown super
+    html = "#{h.toc_for(html)}#{html}".html_safe if toc?
     html
   end
 

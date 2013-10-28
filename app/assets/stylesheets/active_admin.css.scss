@@ -90,4 +90,13 @@ body.active_admin {
       }
     }
   }
+
+  .input.text_toc {
+    label.radio {
+      width: 8%;
+    }
+    input {
+      margin-right: 5px;
+    }
+  }
 }

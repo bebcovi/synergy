@@ -7,6 +7,9 @@ Synergy.active_admin.text = proc do
 
   show title: ->(text) { text.to_s } do |text|
     attributes_table do
+      row "Table of contents?" do
+        {true => "Yes", false => "No"}[text.toc?]
+      end
       row :body_en do
         markdown text.body_en
       end
