@@ -1,6 +1,5 @@
 class Project < ActiveRecord::Base
   belongs_to :category
-  has_many :testimonials, dependent: :destroy
   has_many :attachments, dependent: :destroy
 
   mount_uploader :cover_photo, PhotoUploader
