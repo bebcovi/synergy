@@ -43,6 +43,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "carrierwave", ">= 0.9"
   gem.add_dependency "rmagick"
   gem.add_dependency "fog", ">= 1.14"
+  gem.add_dependency "unf"
   gem.add_dependency "squeel", ">= 1.1"
   gem.add_dependency "active_attr"
   gem.add_dependency "acts_as_list", ">= 0.2"
