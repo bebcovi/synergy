@@ -9,7 +9,7 @@
   }
 }
 
-@mixin spacer($dir, $type, $multiplier: 1, $border: false) {
+@mixin spacer($dir, $multiplier: 1, $type: margin, $border: false) {
   $base: $base-spacing-unit * $multiplier;
 
   @if $border {
@@ -22,19 +22,19 @@
 }
 
 @mixin leader($multiplier: 1, $border: false) {
-  @include spacer(top, margin, $multiplier, $border);
+  @include spacer(top, $multiplier, margin, $border);
 }
 
 @mixin trailer($multiplier: 1, $border: false) {
-  @include spacer(bottom, margin, $multiplier, $border);
+  @include spacer(bottom, $multiplier, margin, $border);
 }
 
 @mixin padding-leader($multiplier: 1, $border: false) {
-  @include spacer(top, padding, $multiplier, $border);
+  @include spacer(top, $multiplier, padding, $border);
 }
 
 @mixin padding-trailer($multiplier: 1, $border: false) {
-  @include spacer(bottom, padding, $multiplier, $border);
+  @include spacer(bottom, $multiplier, padding, $border);
 }
 
 @mixin retina-display {
