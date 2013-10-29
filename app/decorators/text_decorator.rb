@@ -9,6 +9,10 @@ class TextDecorator < Draper::Decorator
   end
 
   def to_s
-    I18n.t("#{controller}.#{action}.page_title")
+    begin
+      I18n.t!("#{controller}.#{action}.navigation_title")
+    rescue
+      I18n.t("#{controller}.#{action}.page_title")
+    end
   end
 end
