@@ -650,6 +650,98 @@
 				"name": "spinner",
 				"ligatures": ""
 			}
+		},
+		{
+			"icon": {
+				"paths": [
+					"M768 640l-256-256-256 256z"
+				],
+				"tags": [
+					"caret-up",
+					"arrow-up",
+					"upload",
+					"top"
+				],
+				"defaultCode": 58292,
+				"grid": 16
+			},
+			"properties": {
+				"order": 29,
+				"id": 949,
+				"prevSize": 32,
+				"code": 58292,
+				"name": "caret-up",
+				"ligatures": ""
+			}
+		},
+		{
+			"icon": {
+				"paths": [
+					"M384.002 768l256-256-256-256z"
+				],
+				"tags": [
+					"caret-right",
+					"arrow-right",
+					"right",
+					"next"
+				],
+				"defaultCode": 58293,
+				"grid": 16
+			},
+			"properties": {
+				"order": 30,
+				"id": 950,
+				"prevSize": 32,
+				"code": 58293,
+				"name": "caret-right",
+				"ligatures": ""
+			}
+		},
+		{
+			"icon": {
+				"paths": [
+					"M256 384l256 256 256-256z"
+				],
+				"tags": [
+					"caret-down",
+					"arrow-down",
+					"download",
+					"bottom"
+				],
+				"defaultCode": 58294,
+				"grid": 16
+			},
+			"properties": {
+				"order": 31,
+				"id": 951,
+				"prevSize": 32,
+				"code": 58294,
+				"name": "caret-down",
+				"ligatures": ""
+			}
+		},
+		{
+			"icon": {
+				"paths": [
+					"M640.002 256l-256 256 256 256.002z"
+				],
+				"tags": [
+					"caret-left",
+					"arrow-left",
+					"left",
+					"previous"
+				],
+				"defaultCode": 58295,
+				"grid": 16
+			},
+			"properties": {
+				"order": 32,
+				"id": 952,
+				"prevSize": 32,
+				"code": 58295,
+				"name": "caret-left",
+				"ligatures": ""
+			}
 		}
 	],
 	"height": 1024,
