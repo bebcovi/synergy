@@ -99,4 +99,19 @@ body.active_admin {
       margin-right: 5px;
     }
   }
+
+  .col-position {
+    font-size: 22px;
+    vertical-align: middle;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: black;
+      }
+    }
+  }
 }
