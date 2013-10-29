@@ -47,10 +47,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency "active_attr"
   gem.add_dependency "acts_as_list", ">= 0.2"
 
-  # I18n
-  gem.add_dependency "i18n-country-translations"
-  gem.add_dependency "i18n_country_select"
-
   # Servers
   gem.add_dependency "thin"    # For development
   gem.add_dependency "unicorn" # For production
