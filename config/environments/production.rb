@@ -1,3 +1,5 @@
+require "exception_notification"
+
 Synergy.app.configure do
   config.eager_load = true
   # Don't reload code between requests
