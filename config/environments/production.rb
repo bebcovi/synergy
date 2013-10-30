@@ -32,7 +32,7 @@ Synergy.app.configure do
 
   config.middleware.use ExceptionNotification::Rack,
     email: {
-      sender_address: "Outward Bound <#{ENV["SENDGRID_USERNAME"]}>",
+      sender_address: "Synergy <#{ENV["SENDGRID_USERNAME"]}>",
       exception_recipients: ["janko.marohnic@gmail.com"],
       ignore_exceptions: [],
     }
