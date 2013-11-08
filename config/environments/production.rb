@@ -31,8 +31,6 @@ Synergy.app.configure do
   config.action_mailer.delivery_method = :smtp
 
   config.middleware.use ExceptionNotification::Rack,
-    ignore_exceptions: [],
-    ignore_if: ->(env, exception) { env["REQUEST_PATH"] =~ /news\.atom/ },
     email: {
       sender_address: "Synergy <#{ENV["SENDGRID_USERNAME"]}>",
       exception_recipients: ["janko.marohnic@gmail.com"],
