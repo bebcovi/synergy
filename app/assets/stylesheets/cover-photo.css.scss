@@ -1,5 +1,14 @@
 .article-cover-photo {
-  height: 5 * $bsu;
+  float: right;
+  width: 300px;
+  margin-top: $hsu;
   margin-bottom: $hsu;
-  overflow: hidden;
+  margin-left: $hsu;
+
+  img {
+    max-width: 100%;
+    border-radius: 6px;
+    padding: 4px;
+    border: 1px solid rgba(black, .25);
+  }
 }
