@@ -7,20 +7,20 @@
 
 @import "icomoon";
 
-@import "functions";
-@import "mixins";
-@import "extends";
-@import "animations";
+@import "synergy/functions";
+@import "synergy/mixins";
+@import "synergy/extends";
+@import "synergy/animations";
 
-@import "wf-loading";
+@import "synergy/wf-loading";
 
-@import "general";
-@import "forms";
+@import "synergy/general";
+@import "synergy/forms";
 
-@import "filter";
-@import "cover-photo";
-@import "spinner";
-@import "attachments";
-@import "toc";
-@import "intro";
-@import "projects";
+@import "synergy/filter";
+@import "synergy/cover-photo";
+@import "synergy/spinner";
+@import "synergy/attachments";
+@import "synergy/toc";
+@import "synergy/intro";
+@import "synergy/projects";

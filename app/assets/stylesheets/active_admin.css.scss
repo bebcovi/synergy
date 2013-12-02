@@ -13,8 +13,8 @@
 
 @import "bourbon";
 @import "icomoon";
-@import "animations";
-@import "spinner";
+@import "synergy/animations";
+@import "synergy/spinner";
 
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
