@@ -48,9 +48,13 @@ Gem::Specification.new do |gem|
   gem.add_dependency "active_attr"
   gem.add_dependency "acts_as_list", ">= 0.2"
 
+  # Background jobs
+  gem.add_dependency "carrierwave_backgrounder"
+  gem.add_dependency "sucker_punch", "~> 0.5.1"
+
   # Servers
   gem.add_dependency "thin"    # For development
-  gem.add_dependency "unicorn" # For production
+  gem.add_dependency "puma"
 
   # Other
   gem.add_dependency "dotenv"
