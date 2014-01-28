@@ -63,4 +63,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency "better_errors", ">= 1.0.1" # Development
   gem.add_dependency "binding_of_caller", ">= 0.7.2" # Development
   gem.add_dependency "rails_12factor" # For Heroku
+  gem.add_dependency "spring", ">= 1.0.1"
 end

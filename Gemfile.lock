@@ -64,6 +64,7 @@ PATH
       rmagick
       sass-rails
       simple_form (>= 3.0.0)
+      spring (>= 1.0.1)
       squeel (>= 1.1)
       sucker_punch (~> 0.5.1)
       thin
@@ -267,6 +268,7 @@ GEM
       actionpack (>= 4.0.0, < 4.1)
       activemodel (>= 4.0.0, < 4.1)
     slop (3.4.7)
+    spring (1.1.0)
     sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
