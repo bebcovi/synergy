@@ -1,21 +1,39 @@
 :markdown
-  - Titles – `#` (biggest), `##` (smaller), `###` (even smaller), ...
-  - `*italic*` – *italic*
-  - `**bold**` – **bold**
-  - `[link](http://example.com)` – [link](http://example.com)
-  - `![image](http://image.jpg)` – displays the image
-  - `<email@example.com>` – <email@example.com>
+  # # Big title
+  ## ## Medium title
+  ### ### Small title
 
-  In order to get paragraphs in texts, an additional empty new line is required between
-  them.
+  * `*italic*` => *italic*
+  * `**bold**` => **bold**
+  * `[link](http://example.com)` => [link](http://example.com)
+  * `![image](http://image.jpg)` => displays the image in the URL
+  * `<email@example.com>` – <email@example.com> (a link to a mail address)
 
-  **Bad**:
+  ## Lists
 
-  This is one paragraph.<br>
-  This is another paragraph.
+  Bulleted list (`*` transforms into • ):
 
-  **Good**:
+      * this
+      * is a
+      * bulleted
+      * list
 
-  This is one paragraph.
+  Numbered list:
 
-  This is another paragraph.
+      1. this
+      2. is a
+      3. numbered
+      4. list
+
+  ## Paragraphs
+
+  You separate paragraphs with an empty new line:
+
+      This is one paragraph.
+
+      This is another paragraph.
+
+  To make a line break (without making a new paragraph), use `<br>`:
+
+      This is one line<br>
+      Which I wanted to break.
