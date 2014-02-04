@@ -41,7 +41,7 @@ Gem::Specification.new do |gem|
   # Database
   gem.add_dependency "pg"
   gem.add_dependency "carrierwave", ">= 0.9"
-  gem.add_dependency "rmagick"
+  gem.add_dependency "mini_magick"
   gem.add_dependency "fog", ">= 1.14"
   gem.add_dependency "unf"
   gem.add_dependency "squeel", ">= 1.1"

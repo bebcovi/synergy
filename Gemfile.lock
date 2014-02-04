@@ -53,6 +53,7 @@ PATH
       jquery-rails
       jquery-turbolinks (>= 1)
       letter_opener
+      mini_magick
       nokogiri
       pg
       pry-rails (>= 0.3.2)
@@ -61,7 +62,6 @@ PATH
       rails (>= 4.0.0)
       rails_12factor
       redcarpet (>= 3)
-      rmagick
       sass-rails
       simple_form (>= 3.0.0)
       spring (>= 1.0.1)
@@ -204,6 +204,8 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.2)
     mime-types (1.25.1)
+    mini_magick (3.7.0)
+      subexec (~> 0.2.1)
     mini_portile (0.5.2)
     minitest (4.7.5)
     multi_json (1.8.2)
@@ -257,7 +259,6 @@ GEM
     request_store (1.0.5)
     responders (1.0.0)
       railties (>= 3.2, < 5)
-    rmagick (2.13.2)
     ruby-hmac (0.4.0)
     sass (3.2.12)
     sass-rails (4.0.0)
@@ -282,6 +283,7 @@ GEM
       activerecord (>= 3.0)
       activesupport (>= 3.0)
       polyamorous (~> 0.6.0)
+    subexec (0.2.3)
     sucker_punch (0.5.1)
       celluloid (~> 0.14.1)
     thin (1.6.1)
