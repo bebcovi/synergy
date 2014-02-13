@@ -7,6 +7,7 @@ end
 
 SuckerPunch.config do
   queue name: :carrierwave, worker: CarrierWave::Workers::StoreAsset, workers: 2
+  self.logger = nil
 end
 
 ##
