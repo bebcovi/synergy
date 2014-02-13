@@ -40,6 +40,9 @@ module Synergy
       g.helper false
     end
 
+    I18n.config.enforce_available_locales = true
+    config.i18n.available_locales = [:hr, :en]
+
     initializer :synergy do
       ActiveAdmin.application.load_paths.unshift File.join(File.dirname(__FILE__), "admin")
     end
