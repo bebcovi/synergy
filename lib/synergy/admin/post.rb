@@ -18,7 +18,11 @@ Synergy.active_admin.post = proc do
   show title: ->(post) { post.to_s } do |post|
     attributes_table do
       row :cover_photo do
-        image_tag post.cover_photo_url(:small), height: 100 if post.cover_photo?
+        if post.cover_photo?
+          image_tag post.cover_photo_url(:small), height: 100
+        elsif post.cover_photo_processing?
+          "Uploading... (refresh at will)"
+        end
       end
     end
 

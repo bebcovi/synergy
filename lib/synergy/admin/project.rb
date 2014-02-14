@@ -25,7 +25,11 @@ Synergy.active_admin.project = proc do
   show title: ->(project) { project.to_s } do |project|
     attributes_table do
       row :cover_photo do
-        image_tag project.cover_photo_url(:small), height: 100 if project.cover_photo?
+        if project.cover_photo?
+          image_tag project.cover_photo_url(:small), height: 100
+        elsif project.cover_photo_processing?
+          "Uploading... (refresh at will)"
+        end
       end
       row :category
       row :date
