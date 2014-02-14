@@ -4,6 +4,7 @@
 #= require_self
 #
 #= require_tree .
+#= stub active_admin
 
 jQuery ($) ->
 

@@ -34,8 +34,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency "jquery-rails"
   gem.add_dependency "coffee-rails"
   gem.add_dependency "uglifier"
-  gem.add_dependency "turbolinks", ">= 1.3.1"
-  gem.add_dependency "jquery-turbolinks", ">= 1"
   gem.add_dependency "quiet_assets" # Development
 
   # Database

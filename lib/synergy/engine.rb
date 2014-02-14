@@ -20,8 +20,6 @@ require "jquery-rails"
 require "coffee-rails"
 require "uglifier"
 require "quiet_assets" if Rails.env.development?
-require "jquery-turbolinks"
-require "turbolinks"
 
 # Database
 require "carrierwave"

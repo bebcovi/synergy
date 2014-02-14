@@ -1,6 +1,4 @@
 #= require jquery
-#= require jquery.turbolinks
-#= require turbolinks
 #= require active_admin/base
 #
 #= require_self
