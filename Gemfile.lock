@@ -61,7 +61,7 @@ PATH
       quiet_assets
       rails (>= 4.0.0)
       rails_12factor
-      redcarpet (>= 3)
+      redcarpet (= 3)
       sass-rails
       simple_form (>= 3.0.0)
       spring (>= 1.0.1)
