@@ -4,7 +4,7 @@ module MarkdownRendering
   module_function
 
   def markdown(text)
-    renderer = Redcarpet::Render::HTML.new(with_toc_data: true)
+    renderer = Redcarpet::Render::HTML.new
     html = Redcarpet::Markdown.new(renderer, superscript: true).render(text.to_s)
     smarty_pants(html)
   end

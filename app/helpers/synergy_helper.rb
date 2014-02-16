@@ -1,5 +1,3 @@
-require "nokogiri"
-
 module SynergyHelper
   include MarkdownRendering
 
@@ -63,10 +61,5 @@ module SynergyHelper
       else        "#{number} days"
       end
     end
-  end
-
-  def toc_for(html)
-    titles = Nokogiri::HTML(html).search(:h2).map { |h2| [h2.text, h2[:id]] }
-    render "toc", {titles: titles}
   end
 end

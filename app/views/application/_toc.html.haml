@@ -1,3 +1,4 @@
 %ol.toc
-  = list_of titles do |name, anchor|
-    = link_to name, "##{anchor}"
+  - parts.each do |part|
+    - if part.title.present?
+      %li= link_to part.title, anchor: part.id
