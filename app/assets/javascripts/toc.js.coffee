@@ -20,3 +20,6 @@ jQuery ->
     updateToc()
 
   updateToc()
+
+  if window.location.hash == "" and $(".part").first().attr("id")
+    $(".part").first().show()
