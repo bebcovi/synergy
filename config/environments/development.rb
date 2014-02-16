@@ -11,6 +11,9 @@ Synergy.app.configure do
 
   config.active_support.deprecation = :log
 
+  # Expands the lines which load the assets
+  config.assets.debug = true
+
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
 end
