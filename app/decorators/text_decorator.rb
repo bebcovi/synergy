@@ -26,7 +26,6 @@ class TextDecorator < Draper::Decorator
         part.title = tag.text
         part.id = tag.text.parameterize
         part.body << tag.to_html
-        p tag.to_html
       else
         parts << (part = Part.new) unless part
         part.body << tag.to_html
