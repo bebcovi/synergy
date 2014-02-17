@@ -23,3 +23,4 @@ jQuery ->
 
   if window.location.hash == "" and $(".part").first().attr("id")
     $(".part").first().show()
+    $(".toc li").first().addClass("active")
