@@ -23,7 +23,6 @@ require "quiet_assets" if Rails.env.development?
 
 # Database
 require "carrierwave"
-require "carrierwave_backgrounder"
 
 # Other
 require "pry-rails" if Rails.env.development?
