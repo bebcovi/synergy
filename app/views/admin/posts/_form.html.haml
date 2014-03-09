@@ -7,7 +7,6 @@
           = image_tag @post.cover_photo_url(:small), height: 100 if @post.cover_photo?
           = f.input_field :cover_photo
           = f.hidden_field :cover_photo_cache
-          = f.input :remove_cover_photo, wrapper: false, as: :boolean if @post.cover_photo?
 
   %h2 English
 
