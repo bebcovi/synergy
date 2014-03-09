@@ -30,6 +30,7 @@ Gem::Specification.new do |gem|
 
   # Assets
   gem.add_dependency "sass-rails"
+  gem.add_dependency "sass", "~> 3.2.12"
   gem.add_dependency "bourbon"
   gem.add_dependency "jquery-rails"
   gem.add_dependency "coffee-rails"
