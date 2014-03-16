@@ -20,6 +20,7 @@ require "jquery-rails"
 require "coffee-rails"
 require "uglifier"
 require "quiet_assets" if Rails.env.development?
+require "jquery-fileupload-rails"
 
 # Database
 require "carrierwave"

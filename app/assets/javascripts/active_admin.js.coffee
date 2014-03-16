@@ -4,9 +4,12 @@
 #= require_self
 #
 #= require_tree ./active_admin
+#= require_tree ./templates
 
 @controller = (name) -> $("body").hasClass("admin_#{name}")
 @action     = (name) -> $("body").hasClass(name)
+
+@template = (name, options) => JST["templates/#{name}"](options)
 
 jQuery ->
 

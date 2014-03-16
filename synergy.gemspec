@@ -27,6 +27,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "draper"
   gem.add_dependency "letter_opener" # Development
   gem.add_dependency "nokogiri"
+  gem.add_dependency "jquery-fileupload-rails", ">= 0.4"
 
   # Assets
   gem.add_dependency "sass-rails", ">= 4.0.2"
@@ -36,6 +37,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "coffee-rails"
   gem.add_dependency "uglifier"
   gem.add_dependency "quiet_assets" # Development
+  gem.add_dependency "eco", ">= 1"
 
   # Database
   gem.add_dependency "pg"
