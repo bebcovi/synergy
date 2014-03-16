@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.require_path = "lib"
 
 
-  gem.add_dependency "rails", ">= 4.0.0"
+  gem.add_dependency "rails", ">= 4.0.4"
 
   # Views
   gem.add_dependency "haml", ">= 4"
