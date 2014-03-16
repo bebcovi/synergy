@@ -1,4 +1,8 @@
+require "pg_search"
+
 class Project < ActiveRecord::Base
+  include PgSearch
+
   belongs_to :category
   has_many :attachments, dependent: :destroy
 
@@ -15,6 +19,21 @@ class Project < ActiveRecord::Base
     :begins_on, :ends_on, :deadline
   validates_presence_of :summary_en, if: :description_en?
   validates_presence_of :summary_hr, if: :description_hr?
+
+  pg_search_scope :search,
+    against: {
+      name_en: "A", name_hr: "A",
+      location_en: "A", location_hr: "A",
+      description_en: "C", description_en: "C",
+    },
+    associated_against: {
+      category: {name_en: "B", name_hr: "B"}
+    },
+    using: {
+      tsearch: {prefix: true},
+      trigram: {},
+    },
+    ignoring: :accents
 
   def to_s
     [name_en, name_hr].find(&:present?)

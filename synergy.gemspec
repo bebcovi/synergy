@@ -48,6 +48,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "squeel", ">= 1.1"
   gem.add_dependency "active_attr"
   gem.add_dependency "acts_as_list", ">= 0.2"
+  gem.add_dependency "pg_search"
 
   # Background jobs
   gem.add_dependency "carrierwave_backgrounder"

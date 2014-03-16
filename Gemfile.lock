@@ -57,6 +57,7 @@ PATH
       mini_magick
       nokogiri
       pg
+      pg_search
       pry-debugger
       pry-rails (>= 0.3.2)
       pry-stack_explorer
@@ -232,6 +233,10 @@ GEM
       mini_portile (~> 0.5.0)
     orm_adapter (0.4.0)
     pg (0.17.1)
+    pg_search (0.7.3)
+      activerecord (>= 3.1)
+      activesupport (>= 3.1)
+      arel
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.4)
