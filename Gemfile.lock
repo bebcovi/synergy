@@ -70,7 +70,6 @@ PATH
       sass-rails (>= 4.0.2)
       simple_form (>= 3.0.0)
       spring (>= 1.0.1)
-      sprockets (~> 2.11.0)
       squeel (>= 1.1)
       sucker_punch (~> 0.5.1)
       thin
