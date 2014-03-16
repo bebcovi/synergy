@@ -13,7 +13,8 @@
 					"graphics"
 				],
 				"defaultCode": 57390,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 1,
@@ -38,7 +39,8 @@
 					"talk"
 				],
 				"defaultCode": 57719,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 2,
@@ -67,7 +69,8 @@
 					"private"
 				],
 				"defaultCode": 58074,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 3,
@@ -92,7 +95,8 @@
 					"visit"
 				],
 				"defaultCode": 58073,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 4,
@@ -118,7 +122,8 @@
 					"options"
 				],
 				"defaultCode": 58028,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 5,
@@ -142,7 +147,8 @@
 					"expand"
 				],
 				"defaultCode": 58032,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 6,
@@ -166,7 +172,8 @@
 					"collapse"
 				],
 				"defaultCode": 58033,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 7,
@@ -193,7 +200,8 @@
 					"dispose"
 				],
 				"defaultCode": 57936,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 8,
@@ -218,7 +226,8 @@
 					"graphic"
 				],
 				"defaultCode": 57388,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 9,
@@ -244,7 +253,8 @@
 					"note"
 				],
 				"defaultCode": 57361,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 10,
@@ -270,7 +280,8 @@
 					"docx"
 				],
 				"defaultCode": 58596,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 11,
@@ -295,7 +306,8 @@
 					"pdf"
 				],
 				"defaultCode": 58594,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 12,
@@ -320,7 +332,8 @@
 					"top"
 				],
 				"defaultCode": 58288,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 13,
@@ -345,7 +358,8 @@
 					"next"
 				],
 				"defaultCode": 58289,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 14,
@@ -370,7 +384,8 @@
 					"bottom"
 				],
 				"defaultCode": 58290,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 15,
@@ -395,7 +410,8 @@
 					"left"
 				],
 				"defaultCode": 58291,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 16,
@@ -419,7 +435,8 @@
 					"sum"
 				],
 				"defaultCode": 58230,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 17,
@@ -444,7 +461,8 @@
 					"pin"
 				],
 				"defaultCode": 57585,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 18,
@@ -470,7 +488,8 @@
 					"day"
 				],
 				"defaultCode": 57622,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 19,
@@ -494,7 +513,8 @@
 					"social"
 				],
 				"defaultCode": 58528,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 20,
@@ -518,7 +538,8 @@
 					"social"
 				],
 				"defaultCode": 58525,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 21,
@@ -541,7 +562,8 @@
 					"social"
 				],
 				"defaultCode": 58520,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 22,
@@ -564,7 +586,8 @@
 					"social"
 				],
 				"defaultCode": 58508,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 23,
@@ -590,7 +613,8 @@
 					"letter"
 				],
 				"defaultCode": 57580,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 24,
@@ -616,7 +640,8 @@
 					"call"
 				],
 				"defaultCode": 57563,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 25,
@@ -641,7 +666,8 @@
 					"favorite"
 				],
 				"defaultCode": 58122,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 26,
@@ -668,7 +694,8 @@
 					"logout"
 				],
 				"defaultCode": 58238,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 27,
@@ -694,7 +721,8 @@
 					"wheel"
 				],
 				"defaultCode": 57769,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 28,
@@ -719,7 +747,8 @@
 					"top"
 				],
 				"defaultCode": 58292,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 29,
@@ -744,7 +773,8 @@
 					"next"
 				],
 				"defaultCode": 58293,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 30,
@@ -769,7 +799,8 @@
 					"bottom"
 				],
 				"defaultCode": 58294,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 31,
@@ -794,7 +825,8 @@
 					"previous"
 				],
 				"defaultCode": 58295,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 32,
@@ -817,7 +849,8 @@
 					"social"
 				],
 				"defaultCode": 58531,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 33,
@@ -843,7 +876,8 @@
 					"news"
 				],
 				"defaultCode": 57439,
-				"grid": 16
+				"grid": 16,
+				"matchesSearch": false
 			},
 			"properties": {
 				"order": 34,
@@ -867,7 +901,8 @@
 					"expand",
 					"enlarge"
 				],
-				"grid": 14
+				"grid": 14,
+				"matchesSearch": false
 			},
 			"properties": {
 				"id": 95,
@@ -879,6 +914,32 @@
 			},
 			"setIdx": 0,
 			"iconIdx": 95
+		},
+		{
+			"icon": {
+				"paths": [
+					"M898.154 938.492l-229.080-336.61c130.918-103.67 167.926-291.354 79.67-438.252-95.854-159.548-303.626-211.344-463.158-115.51-159.53 95.866-211.324 303.632-115.478 463.166 86.426 143.884 263.924 200.094 414.958 139.434l190.286 361.566c5.9 11.222 19.604 15.046 30.458 8.546l85.568-51.44c10.874-6.526 13.928-20.428 6.776-30.9zM577.562 534.064c-108.422 65.126-249.616 29.918-314.75-78.506-65.13-108.394-29.904-249.588 78.506-314.72 108.378-65.14 249.574-29.922 314.702 78.49 65.138 108.396 29.936 249.622-78.458 314.736z"
+				],
+				"tags": [
+					"search",
+					"magnifier",
+					"lookup",
+					"find"
+				],
+				"defaultCode": 57783,
+				"grid": 16,
+				"matchesSearch": true
+			},
+			"properties": {
+				"order": 36,
+				"id": 440,
+				"prevSize": 32,
+				"code": 57783,
+				"name": "search",
+				"ligatures": ""
+			},
+			"setIdx": 2,
+			"iconIdx": 439
 		}
 	],
 	"height": 1024,
