@@ -11,4 +11,4 @@
     %dd.duration= project.duration
 
     %dt= t(".attachments")
-    %dd.attachments!= project.attachments.map { |a| link_to(a.name, a.file.url) }.join(", ")
+    %dd.attachments!= project.attachments.map { |a| link_to(a.name, a.file.url) }.join("<br>")
