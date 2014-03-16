@@ -13,6 +13,6 @@ class PhotoUploader < CarrierWave::Uploader::Base
   end
 
   version :small do
-    resize_to_limit nil, 200
+    resize_to_fill 320, 200
   end
 end
