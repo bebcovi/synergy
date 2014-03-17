@@ -1,5 +1,6 @@
 #= require jquery
 #= require active_admin/base
+#= require jquery.Jcrop
 #
 #= require_self
 #

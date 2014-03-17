@@ -4,6 +4,7 @@ class SynergyController < ActionController::Base
   before_filter :set_locale
   before_filter :set_announcement, unless: :admin?
   before_filter :assign_text
+  before_filter :assign_page_photo
 
   protected
 
@@ -34,6 +35,10 @@ class SynergyController < ActionController::Base
 
   def assign_text
     @text = Text.find("#{params[:controller]}/#{params[:action]}").try(:decorate)
+  end
+
+  def assign_page_photo
+    @page_photo = PagePhoto.find("#{params[:controller]}/#{params[:action]}")
   end
 
   # Go to the application after signing out from the admin interface (Devise)
