@@ -20,20 +20,8 @@ class Project < ActiveRecord::Base
   validates_presence_of :summary_en, if: :description_en?
   validates_presence_of :summary_hr, if: :description_hr?
 
-  pg_search_scope :search,
-    against: {
-      name_en: "A", name_hr: "A",
-      location_en: "A", location_hr: "A",
-      description_en: "C", description_en: "C",
-    },
-    associated_against: {
-      category: {name_en: "B", name_hr: "B"}
-    },
-    using: {
-      tsearch: {prefix: true},
-      trigram: {},
-    },
-    ignoring: :accents
+  multisearchable against: %i[name_en name_hr location_en location_hr description_en description_hr],
+                  associated_against: {category: %i[name_en name_hr]}
 
   def to_s
     [name_en, name_hr].find(&:present?)

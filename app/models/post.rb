@@ -9,16 +9,7 @@ class Post < ActiveRecord::Base
 
   default_scope -> { order{created_at.desc} }
 
-  pg_search_scope :search,
-    against: {
-      title_en: "A", title_hr: "A",
-      body_en: "C", body_hr: "C",
-    },
-    using: {
-      tsearch: {prefix: true},
-      trigram: {},
-    },
-    ignoring: :accents
+  multisearchable against: %i[title_en title_hr body_en body_hr]
 
   def to_s
     [title_en, title_hr].find(&:present?)
