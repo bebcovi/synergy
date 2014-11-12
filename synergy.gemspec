@@ -62,9 +62,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency "dotenv"
   gem.add_dependency "exception_notification", ">= 4" # Production
   gem.add_dependency "pry-rails", ">= 0.3.2" # Development
-  gem.add_dependency "pry-theme"
-  gem.add_dependency "pry-stack_explorer"
-  gem.add_dependency "pry-debugger"
   gem.add_dependency "better_errors", ">= 1.0.1" # Development
   gem.add_dependency "binding_of_caller", ">= 0.7.2" # Development
   gem.add_dependency "rails_12factor" # For Heroku
