@@ -21,7 +21,7 @@ Gem::Specification.new do |gem|
   # Views
   gem.add_dependency "haml", ">= 4"
   gem.add_dependency "haml-rails"
-  gem.add_dependency "simple_form", ">= 3.0.0"
+  gem.add_dependency "simple_form", "3.0.1"
   gem.add_dependency "redcarpet", "= 3"
   gem.add_dependency "will_paginate"
   gem.add_dependency "draper"
