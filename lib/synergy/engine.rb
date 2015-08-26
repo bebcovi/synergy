@@ -24,7 +24,6 @@ require "jquery-fileupload-rails"
 
 # Database
 require "carrierwave"
-require "carrierwave_backgrounder"
 
 # Other
 require "pry-rails" if Rails.env.development?
