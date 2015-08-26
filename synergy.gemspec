@@ -51,7 +51,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "pg_search"
 
   # Background jobs
-  gem.add_dependency "carrierwave_backgrounder"
+  gem.add_dependency "carrierwave_backgrounder", "0.3.0"
   gem.add_dependency "sucker_punch", "~> 0.5.1"
 
   # Servers
