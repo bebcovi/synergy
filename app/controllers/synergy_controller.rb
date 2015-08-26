@@ -39,6 +39,7 @@ class SynergyController < ActionController::Base
 
   def assign_page_photo
     @page_photo = PagePhoto.find("#{params[:controller]}/#{params[:action]}")
+  rescue NameError
   end
 
   # Go to the application after signing out from the admin interface (Devise)
